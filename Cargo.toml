@@ -1,26 +1,4 @@
-[workspace]
-members = [
-    "packages/lib",
-    "packages/macro"
-]
-
-[workspace.package]
-version = "0.1.0"
-edition = "2021"
-license = "MIT"
-repository = "https://github.com/dioxuslabs/rsrpc"
-rust-version = "1.75"
-
-[workspace.dependencies]
-rsrpc = { version = "0.1.0", path = "packages/lib" }
-rsrpc-macro = { version = "0.1.0", path = "packages/macro" }
-tokio = { version = "1", features = ["full"] }
-serde = { version = "1", features = ["derive"] }
-postcard = "1"
-uuid = { version = "1.19.0", features = ["v4"] }
-anyhow = "1.0.100"
-async-trait = "0.1.89"
-
+# Unified into root yolo-ui Cargo workspace
 [package]
 name = "rsrpc-examples"
 version = "0.1.0"
